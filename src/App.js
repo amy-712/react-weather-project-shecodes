@@ -6,7 +6,7 @@ export default function App() {
       <header className="App-header">
        Weather App
        <p>
-         <a href='' target="_blank" rel="noreferrer noopener"> Open source code</a> by 👩🏼‍💻 Amy Walker
+         <a href='https://github.com/amy-712/react-weather-project-shecodes' target="_blank" rel="noreferrer noopener"> Open source code</a> by 👩🏼‍💻 Amy Walker
        </p>
       </header>
     </div>
