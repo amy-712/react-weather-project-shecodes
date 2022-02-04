@@ -1,14 +1,25 @@
+
 import './App.css';
+import Weather from './Weather';
 
 export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       Weather App
-       <p>
+      <div className="container">
+<div className="weather-app-wrapper">
+  <div className="weather-app">
+      
+     
+       <Weather />
+       </div>
+       <small>
          <a href='https://github.com/amy-712/react-weather-project-shecodes' target="_blank" rel="noreferrer noopener"> Open source code</a> by 👩🏼‍💻 Amy Walker
-       </p>
-      </header>
+       </small>
+    
+      </div>
+  
+    </div>
+    
     </div>
   );
 }
