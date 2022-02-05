@@ -55,20 +55,21 @@ export default function Weather() {
                 alt="broken clouds"
               />
               <h1>
-                5<span className="temperatureUnit">℃</span>
+                {Math.round(weatherData.temperature)}
+                <span className="temperatureUnit">℃</span>
               </h1>
             </div>
             <div className="col-4">
               <ul className="weatherType">
                 <li>Humidity: {weatherData.humidity}%</li>
-                <li>Wind: {weatherData.wind} mph</li>
+                <li>Wind: {Math.round(weatherData.wind)} mph</li>
               </ul>
             </div>
             <div className="col-4">
               <ul className="location">
                 <h2>London</h2>
                 <li>Thursday 20:50</li>
-                <li>{weatherData.description}</li>
+                <li className="text-capitalize">{weatherData.description}</li>
               </ul>
             </div>
           </div>
@@ -80,5 +81,6 @@ export default function Weather() {
     let city = "London";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
+    return null;
   }
 }
