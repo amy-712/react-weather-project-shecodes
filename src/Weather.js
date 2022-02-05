@@ -78,7 +78,7 @@ export default function Weather() {
   } else {
     const apiKey = "2236c7e355f68293390c37c68fbd7525";
     let city = "London";
-    let apiUrl = `api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 }
