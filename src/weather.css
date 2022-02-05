@@ -1,3 +1,42 @@
+h1{display: inline;}
+h2{color: black;}
 ul{list-style: none;
 padding: none;
 margin: none;}
+.temperatureUnit {
+    font-size: 16px;
+  font-weight: 24px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: left;
+  line-height: 24px;
+  position: relative;
+  bottom: 15px;
+}
+.todayEmoji {
+    display: inline-block;
+    height: 60px;
+    margin-top: unset;
+    vertical-align: top;
+    width: 40px;
+  }
+.weatherType{
+    display: inline-block;
+    text-align: left;
+    color: #70757a;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 0px;
+    position: relative;
+    top: 35px;
+  }
+  .location {
+    color: grey;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: right;
+  }
+  #my-location-button {
+  margin-left: 56px;
+  }
