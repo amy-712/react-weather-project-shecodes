@@ -1,6 +1,7 @@
 h1 {
   display: inline;
   line-height: 50px;
+  font-size: 54px;
 }
 h2 {
   color: black;
@@ -18,10 +19,11 @@ ul {
   text-align: left;
   line-height: 24px;
   position: relative;
-  bottom: 15px;
+  bottom: 27px;
 }
 .todayEmoji {
-  margin-left: 30px;
+  margin-left: 20px;
+  margin-top: 8px;
   padding: 10px;
   font-weight: bold;
 }

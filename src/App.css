@@ -1,11 +1,11 @@
-body{
+body {
   font-family: sans-serif;
 }
 .weather-app {
   padding: 10px;
   border: 1px solid;
   border-radius: 10px;
-  border-color: 70757a;
+  border-color: black;
 }
 .weather-app-wrapper {
   max-width: 650px;
