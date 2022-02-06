@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./weather.css";
 
@@ -10,7 +11,7 @@ export default function Weather() {
       ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
-      date: "Saturday 18:00",
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
     });
@@ -32,14 +33,14 @@ export default function Weather() {
                 </div>
               </div>
               <div className="col-4">
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" className="btn btn-primary">
                   Search
                 </button>
               </div>
               <div className="col-4">
                 <button
                   type="submit"
-                  class="btn btn-success"
+                  className="btn btn-success"
                   id="my-location-button"
                 >
                   Use My Location
@@ -68,7 +69,9 @@ export default function Weather() {
             <div className="col-4">
               <ul className="location">
                 <h2>London</h2>
-                <li>Thursday 20:50</li>
+                <li>
+                  <FormattedDate date={weatherData.date} />
+                </li>
                 <li className="text-capitalize">{weatherData.description}</li>
               </ul>
             </div>
