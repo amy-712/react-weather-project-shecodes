@@ -1,20 +1,20 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <div className="row">
         <div className="col-4">
-          <img
-            src={props.data.iconUrl}
-            alt={props.data.description}
-            className="today-emoji"
-          />
-          <h1>
-            {Math.round(props.data.temperature)}
-            <span className="temperatureUnit">℃</span>
-          </h1>
+          <div className="todayEmoji">
+            <WeatherIcon code={props.data.icon} />
+
+            <h1>
+              {Math.round(props.data.temperature)}
+              <span className="temperatureUnit">℃</span>
+            </h1>
+          </div>
         </div>
         <div className="col-4">
           <ul className="weatherType">
