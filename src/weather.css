@@ -2,6 +2,7 @@ h1 {
   display: inline;
   line-height: 50px;
   font-size: 54px;
+  margin-left: 10px;
 }
 h2 {
   color: black;
@@ -22,8 +23,7 @@ ul {
   bottom: 27px;
 }
 .todayEmoji {
-  margin-left: 20px;
-  margin-top: 8px;
+  margin-top: 12px;
   padding: 10px;
   font-weight: bold;
 }
@@ -47,8 +47,8 @@ ul {
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
-  text-align: right;
+  text-align: left;
 }
 #my-location-button {
-  margin-left: 56px;
+  margin-left: 44px;
 }
