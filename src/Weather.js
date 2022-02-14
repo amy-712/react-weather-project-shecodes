@@ -58,15 +58,6 @@ export default function Weather(props) {
                   Search
                 </button>
               </div>
-              <div className="col-4">
-                <button
-                  type="submit"
-                  className="btn btn-success"
-                  id="my-location-button"
-                >
-                  Use My Location
-                </button>
-              </div>
             </div>
           </form>
           <WeatherInfo data={weatherData} />
